@@ -67,12 +67,11 @@ assign Diff = (A^B^C);
 assign borrow = (~a&(b^c)|(b&c));
 endmodule 
 ```
-
 ## Output:
 
 HALF SUBTRACTOR:
 
-![](./halfsubl.png)
+![](halfsubl.png)
 
 FULL SUBTRACTOR:
 
