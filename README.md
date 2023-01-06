@@ -27,7 +27,7 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
 STEP 1:
-Use module projname(input,output) to start the Verilog programmming.
+Use module project name(input,output) to start the Verilog programmming.
 
 STEP 2:
 Assign inputs and outputs using the word input and output respectively.
@@ -48,25 +48,23 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: M.Pavithra
 RegisterNumber:  22008686
 */
-```VERILOG PROGRAMMING FOR HALF SUBTRACTOR:
+```
+HALF SUBTRACTOR:
 
-module halfsub(A,B,diff,borrow);
-input A,B; output diff,borrow;
-wire X;
-xor(diff,A,B);
-not(X,A);
-and(borrow,X,B);
+module halfsub(A,B,Diff,Borrow);
+input A,B; 
+output Diff,borrow;
+asssign Diff = (A ^ B);
+assign Borrow = (~A & B);
 endmodule
+```
+FULL SUBTRACTOR:
 
-VERILOG PROGRAMMING FOR FULL SUBTRACTOR:
-
-module fullsub(A,B,C,diff,borrow);
+module fullsub(A,B,C,Diff,Borrow);
 input A,B,C;
-output diff,borrow;
-wire p ;
-assign diff = A ^ B ^ C;
-not(p,A);
-assign borrow = ((p&B)|(p&C)|(B&C));
+output Diff,Borrow;
+assign Diff = (A^B^C);
+assign borrow = (~a&(b^c)|(b&c));
 endmodule 
 ```
 
