@@ -48,9 +48,9 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: M.Pavithra
 RegisterNumber:  22008686
 */
-```
-HALF SUBTRACTOR:
 
+HALF SUBTRACTOR:
+```
 module halfsub(A,B,Diff,Borrow);
 input A,B; 
 output Diff,borrow;
@@ -59,7 +59,7 @@ assign Borrow = (~A & B);
 endmodule
 ```
 FULL SUBTRACTOR:
-
+```
 module fullsub(A,B,C,Diff,Borrow);
 input A,B,C;
 output Diff,Borrow;
@@ -75,7 +75,7 @@ HALF SUBTRACTOR:
 
 FULL SUBTRACTOR:
 
-![](./fullsublogic.png)
+![](./fullsublogic.png.png)
 
 ## Truthtable
 
